@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Dia dos Namorados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Feliz Dia dos Namorados</h1>
+  </header>
+
+<section class="musica">
+  <h2>Solta o som</h2>
+  <audio controls autoplay loop>
+    <source src="Accidentally In Love (From _Shrek 2_ Soundtrack).mp3" type="audio/mpeg">
+    Seu navegador não suporta o player de áudio.
+  </audio>
+  <p>Reduza o volume antes de dar play.</p>
+</section>
+
+  <section id="fotos">
+    <h2>Imagens de afeto para esse dia especial</h2>
+    <div class="carousel">
+      <img class="carousel-image" src="7.webp" alt="Foto 1" />
+      <img class="carousel-image" src="6.jpg" alt="Foto 2" />
+      <img class="carousel-image" src="8.jpg" alt="Foto 3" />
+      <img class="carousel-image" src="9.jpg" alt="Foto 4" />
+      <img class="carousel-image" src="10.jpg" alt="Foto 5" />
+      <img class="carousel-image" src="11.jpg" alt="Foto 11" />
+      <img class="carousel-image" src="1.jpg" alt="Foto 1" />
+      <img class="carousel-image" src="2.webp" alt="Foto 2" />
+      <img class="carousel-image" src="3.jpg" alt="Foto 3" />
+      <img class="carousel-image" src="4.jpg" alt="Foto 4" />
+      <img class="carousel-image" src="5.jpg" alt="Foto 5" />
+    </div>
+  </section>
+
+  <section id="declaracao">
+    <h2>Te amo bbzao</h2>
+    <p>
+        Neste dia consagrado aos amantes, tomo a liberdade de escrever-lhe estas humildes linhas, movida pelo afeto sincero que nutro em meu coração.
+        <br>
+        Não possuo riquezas nem versos dignos dos grandes poetas, mas ofereço-te o que de mais puro há em mim: meu carinho constante, minha admiração profunda e o desejo sincero de seguir contigo, dia após dia.
+        <br>
+        Que este dia dos namorados seja apenas mais um entre tantos que virão, lado a lado, no compasso sereno de um amor que se firma com ternura e serenidade.
+        <br>
+        Com todo o meu afeto,
+        <br>
+        Tua eternamente,
+        <br>
+        Luluzinha
+        <br>
+    </p>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+  <script>
+  window.addEventListener('load', function () {
+    const audio = document.getElementById('audio');
+    audio.muted = false;
+    audio.play().catch(e => {
+      console.log("Autoplay bloqueado, toque para ativar o som.");
+    });
+  });
+</script>
+
+
+</body>
+</html>
